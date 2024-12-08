@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-400 text-white container mx-auto">
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-6 py-4 bg-black">
+        <!-- Logo -->
+        <div>
+            <img src="/assets/logo.svg">
+        </div>
+        <div class="text-lg font-bold text-white">DOML</div>
+
+        <!-- Menu Links -->
+        <ul class="hidden space-x-6 md:flex">
+            <li><a href="#" class="hover:text-blue-400">Product</a></li>
+            <li><a href="#" class="hover:text-blue-400">Team</a></li>
+            <li><a href="#" class="hover:text-blue-400">Enterprise</a></li>
+            <li><a href="#" class="hover:text-blue-400">Explore</a></li>
+            <li><a href="#" class="hover:text-blue-400">Marketplace</a></li>
+        </ul>
+
+        <!-- Buttons -->
+        <div class="hidden md:flex space-x-4">
+            <a href="#"
+                class="px-4 py-2 text-sm bg-transparent border border-white rounded hover:bg-blue-400 hover:text-black">Sign
+                in</a>
+            <a href="#" class="px-4 py-2 text-sm text-black bg-blue-400 rounded hover:bg-blue-500">Sign up</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden flex items-center text-white focus:outline-none" id="menu-toggle">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div class="hidden px-6 py-4 bg-black md:hidden" id="mobile-menu">
+        <ul class="space-y-4">
+            <li><a href="#" class="block hover:text-blue-400">Product</a></li>
+            <li><a href="#" class="block hover:text-blue-400">Team</a></li>
+            <li><a href="#" class="block hover:text-blue-400">Enterprise</a></li>
+            <li><a href="#" class="block hover:text-blue-400">Explore</a></li>
+            <li><a href="#" class="block hover:text-blue-400">Marketplace</a></li>
+        </ul>
+        <div class="mt-4 space-y-2">
+            <a href="#"
+                class="block px-4 py-2 text-center bg-transparent border border-white rounded hover:bg-blue-400 hover:text-black">Sign
+                in</a>
+            <a href="#" class="block px-4 py-2 text-center text-black bg-blue-400 rounded hover:bg-blue-500">Sign up</a>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+
+
+
+    <section class="container mx-auto">
+        <div>
+            <h1 class="text-blue-500 text-5xl ">AI Marketing.</h1>
+        </div>
+    </section>
+
+</body>
+
+</html>
