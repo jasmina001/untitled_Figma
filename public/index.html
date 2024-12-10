@@ -15,6 +15,7 @@
             opacity: 0;
             transform: translateX(-50px);
         }
+
         100% {
             opacity: 1;
             transform: translateX(0);
@@ -26,6 +27,7 @@
             opacity: 0;
             transform: translateX(50px);
         }
+
         100% {
             opacity: 1;
             transform: translateX(0);
@@ -39,6 +41,34 @@
 
     .animate-fade-right {
         animation: fade-right 1.5s ease-out forwards;
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-up {
+        0% {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .animate-fade-in {
+        animation: fade-in 1.5s ease-out;
+    }
+
+    .animate-slide-up {
+        animation: slide-up 1s ease-out;
     }
 </style>
 
@@ -66,9 +96,9 @@
             <a href="#"
                 class="px-4 py-4 text-sm bg-transparent border border-white rounded hover:bg-blue-400 hover:text-black">Signin</a>
 
-                <button
+            <button
                 class="px-8 py-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-lg rounded-lg shadow-lg hover:scale-105 hover:from-pink-500 hover:via-purple-500 hover:to-indigo-500 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
-               sign up
+                sign up
             </button>
         </div>
 
@@ -101,13 +131,104 @@
 
 
 
-
-    <section class="container mx-auto flex items-center justify-between mt-5">
-        <div class="mt-5 animate-fade-left">
-            <b class="text-transparent bg-gradient-to-r from-pink-400 via-white-500 to-blue-500 bg-clip-text text-5xl ">
+    <!-- media finished -->
+    <section class="container mx-auto flex items-center justify-between mt-5 flex-col md:flex-row">
+        <div class="mt-5 animate-fade-left md:w-1/2">
+            <b
+                class="text-transparent bg-gradient-to-r from-pink-400 via-white-500 to-blue-500 bg-clip-text text-5xl md:text-6xl">
                 AI Marketing.
             </b><br>
-            <b class="text-5xl mt-5">Optimized Reach.</b>
+            <b class="text-5xl mt-5 md:text-6xl">Optimized Reach.</b>
+            <p class="mt-10 text-gray-400 text-center md:text-left">Our vision is to revolutionize the way brands and
+                advertisers target, reach</p><br>
+            <div
+                class="relative inline-block p-[2px] rounded-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500">
+                <button
+                    class="flex items-center justify-center px-8 py-4 text-white text-lg font-semibold bg-black rounded-full">
+                    Learn more
+                    <svg class="ml-2 w-5 h-5 text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 fill-current"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M10 19l7-7-7-7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="animate-fade-right md:w-1/2">
+            <img src="/assets/image 3 (4).png" class="w-full mt-10 md:mt-0" />
+        </div>
+    </section>
+    <!-- logo page -->
+    <section class="container mx-auto">
+        <div class="flex items-center justify-between mt-5 flex-wrap">
+            <div class="w-1/5 p-2">
+                <img src="/assets/Group 19.svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/Group 20.svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/Group 21.svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/Group 22.svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/image 6 (Traced) (1).svg">
+            </div>
+        </div>
+        <div class="flex items-center justify-between mt-5 flex-wrap">
+            <div class="w-1/5 p-2">
+                <img src="/assets/Group 21.svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/Group 22.svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/image 6 (Traced) (1).svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/Airbnb.svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/Ebay.svg">
+            </div>
+        </div>
+        <div class="flex items-center justify-between mt-5 flex-wrap">
+            <div class="w-1/5 p-2">
+                <img src="/assets/Group 22.svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/image 6 (Traced) (1).svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/Airbnb.svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/Ebay.svg">
+            </div>
+            <div class="w-1/5 p-2">
+                <img src="/assets/Group 21.svg">
+            </div>
+        </div>
+    </section>
+
+<!-- center word -->
+    <section class="container mx-auto flex items-center justify-center mt-10">
+        <b>Trusted by the world’s most ambitious teams.</b>
+    </section>
+
+    <section class="container mx-auto flex items-center justify-between mt-10 flex-col md:flex-row animate-fade-in">
+        <div class="mt-5 md:w-1/2 animate-slide-up">
+            <h3 class="text-transparent bg-gradient-to-r from-pink-400 via-white-500 to-blue-500 bg-clip-text text-5xl">
+                AI Marketing
+            </h3><br>
+            <b class="text-3xl">Optimized Reach.</b>
+            <p>
+                DOML is a digital media agency powered by AI<br> technology providing real-time, data-driven
+                insights<br>
+                your business and audience. The mission of DOML<br> is to create the best experiences for companies<br>
+                through intelligent insights, powerful analytics, and<br> strategic execution.
+            </p>
             <p class="mt-10 text-gray-400">Our vision is to revolutionize the way brands and advertisers target, reach</p><br>
             <div class="relative inline-block p-[2px] rounded-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500">
                 <button class="flex items-center justify-center px-8 py-4 text-white text-lg font-semibold bg-black rounded-full">
@@ -118,186 +239,88 @@
                 </button>
             </div>
         </div>
-        <div class="animate-fade-right">
-            <img src="/assets/image 3 (4).png" />
-        </div>
-    </section>
-   
-    <section class="container mx-auto ">
-        <div class="flex items-center justify-between mt-5">
-            <div>
-                <img src="/assets/Group 19.svg">
-            </div>
-            <div>
-                <img src="/assets/Group 20.svg">
-            </div>
-            <div>
-                <img src="/assets/Group 21.svg">
-            </div>
-            <div>
-                <img src="/assets/Group 22.svg">
-            </div>
-            <div>
-                <img src="/assets/image 6 (Traced) (1).svg">
-            </div>
-        </div>
-        <div class="flex items-center justify-between mt-5">
-
-            <div>
-                <img src="/assets/Group 21.svg">
-            </div>
-            <div>
-                <img src="/assets/Group 22.svg">
-            </div>
-            <div>
-                <img src="/assets/image 6 (Traced) (1).svg">
-            </div>
-            <div>
-                <img src="/assets/Airbnb.svg">
-            </div>
-            <div>
-                <img src="/assets/Ebay.svg">
-            </div>
-        </div>
-        <div class="flex items-center justify-between mt-5">
-            <div>
-                <img src="/assets/Group 22.svg">
-            </div>
-            <div>
-                <img src="/assets/image 6 (Traced) (1).svg">
-            </div>
-            <div>
-                <img src="/assets/Airbnb.svg">
-            </div>
-            <div>
-                <img src="/assets/Ebay.svg">
-            </div>
-            <div>
-                <img src="/assets/Group 21.svg">
-            </div>
+        <div class="md:w-1/2 mt-5 md:mt-0 animate-slide-up">
+            <img src="/assets/1.png" class="w-full" />
         </div>
     </section>
 
-    <section class="container mx-auto flex items-center justify-center mt-10">
-        <b>Trusted by the world’s most ambitious teams.</b>
-    </section>
-
-
-    <section class="container mx-auto flex items-center justify-between mt-10">
-        <div class="mt-5">
-            <h3
-                class="text-transparent bg-gradient-to-r from-pink-400 via-white-500 to-blue-500 bg-clip-text text-5xl ">
+    <section class="container mx-auto flex items-center gap-5 justify-between mt-5 flex-col md:flex-row animate-fade-in">
+        <div class="w-full md:w-1/2">
+            <img src="/assets/18.png" class="w-full" />
+        </div>
+    
+        <div class="mt-5 w-full md:w-1/2">
+            <h3 class="text-transparent bg-gradient-to-r from-pink-400 via-white-500 to-blue-500 bg-clip-text text-5xl">
                 AI Marketing
             </h3><br>
             <b class="text-3xl">Optimized Reach.</b>
             <p>
-                DOML is a digital media agency powered by AI<br> technology providing real time, data-driven
+                DOML is a digital media agency powered by AI technology providing real-time, data-driven
                 insights<br>
-                your business and audience. The mission of DOML<br> is to create the best experiences for companies <br>
-                through
-                intelligent insights, powerful analytics and<br> strategic execution.
+                your business and audience. The mission of DOML<br> is to create the best experiences for companies<br>
+                through intelligent insights, powerful analytics, and<br> strategic execution.
             </p>
-            <p class="mt-10 text-gray-400">Our vision is to revolutionize the way brands and advertisers target, reach
-            </p><br>
+            <p class="mt-10 text-gray-400">Our vision is to revolutionize the way brands and advertisers target, reach</p><br>
             <div class="relative inline-block p-[2px] rounded-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500">
                 <button class="flex items-center justify-center px-8 py-4 text-white text-lg font-semibold bg-black rounded-full">
-                  Learn more
-                  <svg class="ml-2 w-5 h-5 text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M10 19l7-7-7-7" />
-                  </svg>
+                    Learn more
+                    <svg class="ml-2 w-5 h-5 text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M10 19l7-7-7-7" />
+                    </svg>
                 </button>
-              </div>
-              
+            </div>
         </div>
-        <div>
-            <img src="/assets/1.png">
-        </div>
-
     </section>
+    
 
-
-    <section class="container mx-auto flex items-center justify-between mt-10">
-        <div>
-            <img src="/assets/18.png">
+    <!-- card section -->
+    <section class="container mx-auto animate-pulse flex flex-col md:flex-row justify-center gap-8 md:gap-40 items-center bg-gradient-to-r from-[#00F0FF] via-[#5200FF] to-[#FF2DF7] rounded-[20px] p-8 w-full md:w-[1467px] h-auto">
+        <div class="w-full md:w-1/2">
+            <img src="/assets/Rectangle 10.png" class="w-full max-w-[500px] h-auto mx-auto" />
         </div>
-        0
-
-        <div class="mt-5">
-            <h3
-                class="text-transparent bg-gradient-to-r from-pink-400 via-white-500 to-blue-500 bg-clip-text text-5xl ">
-                AI Marketing
-            </h3><br>
-            <b class="text-3xl">Optimized Reach.</b>
-            <p>
-                DOML is a digital media agency powered by AI<br> technology providing real time, data-driven
-                insights<br>
-                your business and audience. The mission of DOML<br> is to create the best experiences for companies <br>
-                through
-                intelligent insights, powerful analytics and<br> strategic execution.
-            </p>
-            <p class="mt-10 text-gray-400">Our vision is to revolutionize the way brands and advertisers target, reach
-            </p><br>
-          <div class="relative inline-block p-[2px] rounded-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500">
-  <button class="flex items-center justify-center px-8 py-4 text-white text-lg font-semibold bg-black rounded-full">
-    Learn more
-    <svg class="ml-2 w-5 h-5 text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M10 19l7-7-7-7" />
-    </svg>
-  </button>
-</div>
-
-        </div>
-
-    </section>
-
-<!-- card section -->
-    <section
-        class="container mx-auto animate-pulse flex justify-center gap-40 items-center bg-gradient-to-r from-[#00F0FF] via-[#5200FF] to-[#FF2DF7] rounded-[20px] p-8 w-[1467px] h-[513px]">
-        <div>
-            <img src="/assets/Rectangle 10.png">
-        </div>
-        <div>
-            <i>It's all about getting your message in front of the right audience and creating those<br> valuable
+        <div class="w-full md:w-1/2">
+            <i>
+                It's all about getting your message in front of the right audience and creating those<br> valuable
                 relationships. Learn More about how DOML can help you do just that - all with a <br>simple, easy-to-use
-                platform.</i><br>
+                platform.
+            </i><br>
             <b>Amaka Micheal</b><br>
             <h1>
                 Media Executive, Buying & Control
             </h1>
         </div>
-
     </section>
+    
+    
 
-    <section class="container mx-auto flex items-center justify-between mt-10">
-        <div class="mt-5">
-            <h3
-                class="text-transparent bg-gradient-to-r from-pink-400 via-white-500 to-blue-500 bg-clip-text text-5xl ">
+    <section class="container mx-auto flex flex-col md:flex-row items-center justify-between mt-10">
+        <div class="mt-5 md:w-1/2">
+            <h3 class="text-transparent bg-gradient-to-r from-pink-400 via-white-500 to-blue-500 bg-clip-text text-5xl ">
                 AI Marketing
             </h3><br>
             <b class="text-3xl">Optimized Reach.</b>
             <p>
-                DOML is a digital media agency powered by AI<br> technology providing real time, data-driven
+                DOML is a digital media agency powered by AI<br> technology providing real-time, data-driven
                 insights<br>
                 your business and audience. The mission of DOML<br> is to create the best experiences for companies <br>
-                through
-                intelligent insights, powerful analytics and<br> strategic execution.
+                through intelligent insights, powerful analytics and<br> strategic execution.
             </p>
             <p class="mt-10 text-gray-400">Our vision is to revolutionize the way brands and advertisers target, reach
             </p><br>
             <div class="relative inline-block p-[2px] rounded-full bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500">
                 <button class="flex items-center justify-center px-8 py-4 text-white text-lg font-semibold bg-black rounded-full">
-                  Learn more
-                  <svg class="ml-2 w-5 h-5 text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M10 19l7-7-7-7" />
-                  </svg>
+                    Learn more
+                    <svg class="ml-2 w-5 h-5 text-transparent bg-gradient-to-r from-purple-500 via-blue-500 to-cyan-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M10 19l7-7-7-7" />
+                    </svg>
                 </button>
-              </div>
-              
+            </div>
         </div>
-        <div>
-            <img class="" src="/assets/50.png">
+        <div class="md:w-1/2 mt-5 md:mt-0">
+            <img class="w-full h-auto" src="/assets/50.png" />
         </div>
     </section>
+    
 
     <section>
         <div>
